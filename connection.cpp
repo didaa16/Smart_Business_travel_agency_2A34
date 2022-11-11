@@ -14,10 +14,5 @@ db.setPassword("dida16");//inserer mot de passe de cet utilisateur
 
 if (db.open())
 test=true;
-
-
-
-
-
     return  test;
 }

@@ -13,6 +13,7 @@
         <file>Bottons/Add.png</file>
         <file>Bottons/Home.png</file>
         <file>Bottons/Hotel.png</file>
+        <file>Bottons/Star.png</file>
     </qresource>
     <qresource prefix="/Backg">
         <file>Background/Backg.jpg</file>
@@ -23,5 +24,11 @@
         <file>Logo/Logo1.png</file>
         <file>Logo/Logo2.png</file>
         <file>Logo/SmartyXdev.png</file>
+    </qresource>
+    <qresource prefix="/translate">
+        <file>english.qm</file>
+        <file>spanish.qm</file>
+        <file>chinese.qm</file>
+        <file>arabic.qm</file>
     </qresource>
 </RCC>

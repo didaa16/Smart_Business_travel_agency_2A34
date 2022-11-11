@@ -91,13 +91,13 @@ QSqlQueryModel * Hotel::afficherrecherche(QString ar)
 QString Hotel::classification()
 {
     int s=0 ,m;
-    if (reco.size()== 10)
+    if (reco.size()== 1)
     {
         for (QList <int> ::iterator it = reco.begin(); it != reco.end();it++)
         {
             s = s+reco[*it];
         }
-        m = s/10 ;
+        m = s/1 ;
         QList <int> ::iterator i = reco.begin();
         while (i != reco.end())
         {
@@ -107,22 +107,22 @@ QString Hotel::classification()
         switch (m)
         {
         case 0:
-            classe = "0 Etoile";
+            classe = "0";
             break;
         case 1:
-            classe = "1 Etoile";
+            classe = "1";
             break;
         case 2:
-            classe = "2 Etoiles";
+            classe = "2";
             break;
         case 3:
-            classe = "3 Etoiles";
+            classe = "3";
             break;
         case 4:
-            classe = "4 Etoiles";
+            classe = "4";
             break;
         case 5:
-            classe = "5 Etoiles";
+            classe = "5";
             break;
         }
         return classe ;
@@ -143,9 +143,3 @@ bool Hotel::modifier_classe() //POUR CLASSIFICATION
     query.bindValue(":classe", classe);
     return query.exec();
 }
-
-
-
-
-
-

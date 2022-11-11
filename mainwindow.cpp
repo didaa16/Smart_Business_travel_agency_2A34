@@ -194,22 +194,22 @@ void MainWindow::on_pushButton_8_clicked() //RECOMMENDATION & CLASSIFICATION
     switch (moy)
     {
     case 0:
-        total = "0 Etoile";
+        total = "0";
         break;
     case 1:
-        total = "1 Etoile";
+        total = "1";
         break;
     case 2:
-        total = "2 Etoiles";
+        total = "2";
         break;
     case 3:
-        total = "3 Etoiles";
+        total = "3";
         break;
     case 4:
-        total = "4 Etoiles";
+        total = "4";
         break;
     case 5:
-        total = "5 Etoiles";
+        total = "5";
         break;
     }
     ui->lineEdit->setText(total);
@@ -286,7 +286,7 @@ void MainWindow::on_actionStatiqtiques_triggered() //STATISTIQUES
             tot++;
         }
     }
-    q2.prepare("Select * from Hotel where classe ='1 Etoile'");
+    q2.prepare("Select * from Hotel where classe ='1'");
     if(q2.exec())
     {
         while (q2.next())
@@ -294,7 +294,7 @@ void MainWindow::on_actionStatiqtiques_triggered() //STATISTIQUES
             c1++;
         }
     }
-    q3.prepare("Select * from Hotel where classe ='2 Etoiles'");
+    q3.prepare("Select * from Hotel where classe ='2'");
     if(q3.exec())
     {
         while (q3.next())
@@ -302,7 +302,7 @@ void MainWindow::on_actionStatiqtiques_triggered() //STATISTIQUES
             c2++;
         }
     }
-    q4.prepare("Select * from Hotel where classe ='3 Etoiles'");
+    q4.prepare("Select * from Hotel where classe ='3'");
     if(q4.exec())
     {
         while (q4.next())
@@ -310,7 +310,7 @@ void MainWindow::on_actionStatiqtiques_triggered() //STATISTIQUES
             c3++;
         }
     }
-    q5.prepare("Select * from Hotel where classe ='4 Etoiles'");
+    q5.prepare("Select * from Hotel where classe ='4'");
     if(q5.exec())
     {
         while (q5.next())
@@ -318,7 +318,7 @@ void MainWindow::on_actionStatiqtiques_triggered() //STATISTIQUES
             c4++;
         }
     }
-    q6.prepare("Select * from Hotel where classe ='5 Etoiles'");
+    q6.prepare("Select * from Hotel where classe ='5'");
     if(q6.exec())
     {
         while (q6.next())
@@ -332,11 +332,11 @@ void MainWindow::on_actionStatiqtiques_triggered() //STATISTIQUES
     c4=c4/tot;
     c5=c5/tot;
     QPieSeries *series = new QPieSeries();
-            series->append("1 Etoiles",c1);
-            series->append("2 Etoiles",c2);
-            series->append("3 Etoiles",c3);
-            series->append("4 Etoiles",c4);
-            series->append("5 Etoiles",c5);
+            series->append("1",c1);
+            series->append("2",c2);
+            series->append("3",c3);
+            series->append("4",c4);
+            series->append("5",c5);
             QPieSlice *slice0 = series->slices().at(0);
             slice0->setExploded();
             slice0->setLabelVisible();
@@ -413,5 +413,3 @@ void MainWindow::on_pushButton_6_clicked() //ANNULER D'AJOUT
 {
     ui->tabWidget->close();
 }
-
-
