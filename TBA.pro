@@ -25,15 +25,18 @@ SOURCES += \
     connection.cpp \
     hotel.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    stats.cpp
 
 HEADERS += \
     connection.h \
     hotel.h \
-    mainwindow.h
+    mainwindow.h \
+    stats.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    stats.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

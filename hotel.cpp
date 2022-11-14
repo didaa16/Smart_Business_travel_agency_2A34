@@ -21,7 +21,6 @@ long Hotel::get_num (){return  num;}
 float Hotel::get_prix (){return prix;}
 QString Hotel::get_classe (){return classe;}
 QList <int> Hotel::get_reco(){return reco;}
-QList <QString> Hotel::get_tabadresse () {return tabadresse;}
 void Hotel::set_id (int id ){this->id = id;}
 void Hotel::set_nom (QString nom){this->nom = nom ;}
 void Hotel::set_adresse (QString adresse){this->adresse= adresse;}

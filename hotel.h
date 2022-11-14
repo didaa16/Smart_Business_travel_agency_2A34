@@ -34,7 +34,6 @@ private:
     float prix;
     QString nom, adresse, classe;
     QList <int> reco;
-    QList <QString> tabadresse;
 public:
     Hotel ();
     Hotel(int, QString, QString, long, float, QString);
@@ -60,9 +59,6 @@ public:
     bool rechercher (int);
     bool modifier();
     bool modifier_classe();
-    int calcul_adresses(QString);
-    void pie();
-    QStringList listeadresses();
     QSqlQueryModel *afficherrecherche (QString);
     QString classification();
 };

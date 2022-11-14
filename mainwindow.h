@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include "hotel.h"
+#include "stats.h"
 #include <QMainWindow>
 #include <QSqlQueryModel>
 #include <QDebug>
@@ -15,7 +16,7 @@
 #include <QPrinter>
 #include <QPrintDialog>
 
-
+QT_CHARTS_USE_NAMESPACE
 namespace Ui {
 class MainWindow;
 }
@@ -66,16 +67,14 @@ private slots:
 
     void on_pushButton_10_clicked(); //RETOUR DE PDF
 
-    void on_pushButton_7_clicked(); //RETOUR DE STATS
-
     void on_tabWidget_tabCloseRequested(int index); //REMOVE TAB
 
     void on_pushButton_6_clicked(); //ANNULER D'AJOUT
 
 
-
 private:
     Ui::MainWindow *ui;
+    stats *s;
     Hotel Htmp;
 };
 
