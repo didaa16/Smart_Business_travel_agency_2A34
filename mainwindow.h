@@ -15,6 +15,7 @@
 #include <QtCharts/QLineSeries>
 #include <QPrinter>
 #include <QPrintDialog>
+#include "arduino.h"
 
 QT_CHARTS_USE_NAMESPACE
 namespace Ui {
@@ -76,6 +77,8 @@ private:
     Ui::MainWindow *ui;
     stats *s;
     Hotel Htmp;
+    QByteArray data; // variable contenant les données reçues
+    Arduino A;
 };
 
 #endif // MAINWINDOW_H

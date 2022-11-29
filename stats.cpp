@@ -15,13 +15,13 @@ stats::~stats()
  void stats::pie()
  {
      QSqlQuery q1,q2,q3,q4,q5,q6;
-     qreal tot=0,c1=0,c2=0,c3=0,c4=0,c5=0;
+     qreal total=0,c1=0,c2=0,c3=0,c4=0,c5=0;
      q1.prepare("Select * from Hotel");
      if(q1.exec())
      {
          while (q1.next())
          {
-             tot++;
+             total++;
          }
      }
      q2.prepare("Select * from Hotel where classe ='1'");
@@ -64,12 +64,19 @@ stats::~stats()
              c5++;
          }
      }
-     c1=c1/tot;
-     c2=c2/tot;
-     c3=c3/tot;
-     c4=c4/tot;
-     c5=c5/tot;
+     c1=(c1/total)*100;
+     c2=(c2/total)*100;
+     c3=(c3/total)*100;
+     c4=(c4/total)*100;
+     c5=(c5/total)*100;
+     QString c1_string = QString::number(c1);
+     QString c2_string = QString::number(c2);
+     QString c3_string = QString::number(c3);
+     QString c4_string = QString::number(c4);
+     QString c5_string = QString::number(c5);
+     QString info ("1 Star = " + c1_string + "%\n" + "2 Stars = " + c2_string + "%\n" + "3 Stars = " + c3_string + "%\n" + "4 Stars = " + c4_string + "%\n" + "5 Stars = " + c5_string + "%");
      QPieSeries *series = new QPieSeries();
+     series->setHoleSize(0.3);
              series->append("1",c1);
              series->append("2",c2);
              series->append("3",c3);
@@ -78,31 +85,22 @@ stats::~stats()
              QPieSlice *slice0 = series->slices().at(0);
              slice0->setExploded();
              slice0->setLabelVisible();
-             slice0->setPen(QPen(Qt::darkGray, 2));
-             slice0->setBrush(Qt::gray);
              QPieSlice *slice1 = series->slices().at(1);
              slice1->setExploded();
              slice1->setLabelVisible();
-             slice1->setPen(QPen(Qt::darkRed, 2));
-             slice1->setBrush(Qt::red);
              QPieSlice *slice2 = series->slices().at(2);
              slice2->setExploded();
              slice2->setLabelVisible();
-             slice2->setPen(QPen(Qt::darkYellow, 2));
-             slice2->setBrush(Qt::yellow);
              QPieSlice *slice3 = series->slices().at(3);
              slice3->setExploded();
              slice3->setLabelVisible();
-             slice3->setPen(QPen(Qt::darkGreen, 2));
-             slice3->setBrush(Qt::green);
              QPieSlice *slice4 = series->slices().at(4);
              slice4->setExploded();
              slice4->setLabelVisible();
-             slice4->setPen(QPen(Qt::blue, 2));
-             slice4->setBrush(Qt::cyan);
              QChart *chart = new QChart();
              chart->addSeries(series);
              chart->setTitle("MOST CLASSES SAVED");
+             chart->setTheme(QChart::ChartThemeDark);
              chart->setAnimationOptions(QChart::AllAnimations);
              chart->legend()->hide();
              QChartView *chartView = new QChartView(chart);
@@ -110,6 +108,7 @@ stats::~stats()
              QGridLayout *layout = new QGridLayout();
              layout->addWidget(chartView);
              ui->stat->setLayout(layout);
+             ui->stat_2->setText(info);
  }
 
 void stats::on_pushButton_9_clicked()

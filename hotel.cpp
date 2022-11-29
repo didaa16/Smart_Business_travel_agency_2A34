@@ -5,6 +5,7 @@
 #include <QSqlQuery>
 #include <QtDebug>
 #include <QVector>
+#include "arduino.h"
 
 
 Hotel::Hotel()
@@ -141,4 +142,16 @@ bool Hotel::modifier_classe() //POUR CLASSIFICATION
     query.bindValue(":id", id_string);
     query.bindValue(":classe", classe);
     return query.exec();
+}
+
+QString Hotel::aclasse()
+{
+    QSqlQuery query;
+    QString classe = Hotel::classification();
+    QString id_string = QString::number(id);
+    query.prepare("UPDATE Hotel SET classe = :classe "
+                        " WHERE  ID = '"+id_string+"' ");
+    query.bindValue(":id", id_string);
+    query.bindValue(":classe", classe);
+    return classe;
 }

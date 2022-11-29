@@ -23,6 +23,7 @@
 #include <QtCharts/QCategoryAxis>
 #include <QtCharts/QPieSeries>
 #include <QtCharts/QPieSlice>
+#include"arduino.h"
 
 QT_CHARTS_USE_NAMESPACE
 
@@ -34,6 +35,8 @@ private:
     float prix;
     QString nom, adresse, classe;
     QList <int> reco;
+    QByteArray data; // variable contenant les données reçues
+    Arduino A;
 public:
     Hotel ();
     Hotel(int, QString, QString, long, float, QString);
@@ -59,6 +62,7 @@ public:
     bool rechercher (int);
     bool modifier();
     bool modifier_classe();
+    QString aclasse();
     QSqlQueryModel *afficherrecherche (QString);
     QString classification();
 };

@@ -23,6 +23,14 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->lineEdit_311->setValidator(new QIntValidator (0,99999999,this));
     ui->lineEdit_341->setValidator(new QIntValidator);
     ui->tabaffichage->setModel(Htmp.afficher());
+    int ret=A.connect_arduino(); // lancer la connexion à arduino
+            switch(ret){
+            case(0):qDebug()<< "arduino is available and connected to : "<< A.getarduino_port_name();
+                break;
+            case(1):qDebug() << "arduino is available but not connected to :" <<A.getarduino_port_name();
+               break;
+            case(-1):qDebug() << "arduino is not available";
+            }
 }
 MainWindow::~MainWindow()
 {
@@ -232,6 +240,23 @@ void MainWindow::on_pushButton_8_clicked() //RECOMMENDATION & CLASSIFICATION
                                  QObject::tr("Classification non effectué \n" "Click cancel to exit."),QMessageBox::Cancel);
     ui->tabaffichage->setModel(Htmp.afficher()); //AFFICHAGE AUTO
     ui->tabWidget->setCurrentIndex(1);
+    QString test1 = h.aclasse();
+    if(test1=="1")
+    {
+        QString alerte = ("ATTENTION! "+ nom);
+        QByteArray x=alerte.toUtf8();
+        qDebug() << x ;
+        A.write_to_arduino(x);
+
+    }
+    else if (test1 =="5")
+    {
+        QString alerte = ("CONGRATS! "+ nom);
+        QByteArray x=alerte.toUtf8();
+        qDebug() << x ;
+        A.write_to_arduino(x);
+    }
+
 }
 
 void MainWindow::on_pushButton_pdf_clicked() // PDF
@@ -315,4 +340,5 @@ void MainWindow::on_pushButton_6_clicked() //ANNULER D'AJOUT
 {
     ui->tabWidget->close();
 }
+
 
