@@ -35,6 +35,19 @@
       <normaloff>:/Boutons/Bottons/Hotel.png</normaloff>:/Boutons/Bottons/Hotel.png</iconset>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>280</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gestion Finances</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

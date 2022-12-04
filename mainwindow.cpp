@@ -19,3 +19,9 @@ void MainWindow::on_pushButton_clicked()
     hotel = new mainwindow_hotel ();
     hotel->show();
 }
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    finance = new mainwindow_finances ();
+    finance ->show();
+}
