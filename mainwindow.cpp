@@ -25,3 +25,9 @@ void MainWindow::on_pushButton_2_clicked()
     finance = new mainwindow_finances ();
     finance ->show();
 }
+
+void MainWindow::on_pushButton_3_clicked()
+{
+visa=new mainwindow_visa();
+visa->show();
+}

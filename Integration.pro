@@ -3,6 +3,7 @@ QT += core gui sql
 QT += core gui printsupport
 QT += core gui charts
 QT += serialport
+QT       += core gui  network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TEMPLATE = app
@@ -24,11 +25,14 @@ SOURCES += \
     arduino_hotel.cpp \
     connection.cpp \
     facture.cpp \
+    gestionvisa.cpp \
     hotel.cpp \
+    mail.cpp \
     main.cpp \
     mainwindow.cpp \
     mainwindow_finances.cpp \
     mainwindow_hotel.cpp \
+    mainwindow_visa.cpp \
     stats_hotel.cpp
 
 HEADERS += \
@@ -36,16 +40,20 @@ HEADERS += \
     arduino_hotel.h \
     connection.h \
     facture.h \
+    gestionvisa.h \
     hotel.h \
+    mail.h \
     mainwindow.h \
     mainwindow_finances.h \
     mainwindow_hotel.h \
+    mainwindow_visa.h \
     stats_hotel.h
 
 FORMS += \
     mainwindow.ui \
     mainwindow_finances.ui \
     mainwindow_hotel.ui \
+    mainwindow_visa.ui \
     stats_hotel.ui
 
 TRANSLATIONS += \

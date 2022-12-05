@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include "mainwindow_visa.h"
 #include <QMainWindow>
 #include "mainwindow_hotel.h"
 #include "mainwindow_finances.h"
@@ -22,10 +22,12 @@ private slots:
 
     void on_pushButton_2_clicked();
 
+    void on_pushButton_3_clicked();
+
 private:
     Ui::MainWindow *ui;
     mainwindow_hotel *hotel;
     mainwindow_finances *finance;
-
+ mainwindow_visa *visa;
 };
 #endif // MAINWINDOW_H
