@@ -37,8 +37,10 @@ SOURCES += \
     mainwindow_hotel.cpp \
     mainwindow_tba.cpp \
     mainwindow_visa.cpp \
+    mainwindow_voyage.cpp \
     smtpp.cpp \
-    stats_hotel.cpp
+    stats_hotel.cpp \
+    voyages.cpp
 
 HEADERS += \
     alerte.h \
@@ -56,8 +58,10 @@ HEADERS += \
     mainwindow_hotel.h \
     mainwindow_tba.h \
     mainwindow_visa.h \
+    mainwindow_voyage.h \
     smtpp.h \
-    stats_hotel.h
+    stats_hotel.h \
+    voyages.h
 
 FORMS += \
     mainwindow.ui \
@@ -65,6 +69,7 @@ FORMS += \
     mainwindow_hotel.ui \
     mainwindow_tba.ui \
     mainwindow_visa.ui \
+    mainwindow_voyage.ui \
     stats_hotel.ui
 
 TRANSLATIONS += \

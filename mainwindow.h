@@ -5,7 +5,7 @@
 #include "mainwindow_hotel.h"
 #include "mainwindow_finances.h"
 #include "mainwindow_tba.h"
-
+#include "mainwindow_voyage.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -27,11 +27,14 @@ private slots:
 
     void on_pushButton_4_clicked();
 
+    void on_pushButton_5_clicked();
+
 private:
     Ui::MainWindow *ui;
     mainwindow_hotel *hotel;
     mainwindow_finances *finance;
     mainwindow_visa *visa;
     mainwindow_tba *c;
+    MainWindow_voyage *v;
 };
 #endif // MAINWINDOW_H

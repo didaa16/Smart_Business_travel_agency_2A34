@@ -38,3 +38,9 @@ void MainWindow::on_pushButton_4_clicked()
     c = new mainwindow_tba();
     c->show();
 }
+
+void MainWindow::on_pushButton_5_clicked()
+{
+    v = new MainWindow_voyage();
+    v->show();
+}
