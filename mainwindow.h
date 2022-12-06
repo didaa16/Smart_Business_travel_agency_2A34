@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "mainwindow_hotel.h"
 #include "mainwindow_finances.h"
+#include "mainwindow_tba.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -24,10 +25,13 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+    void on_pushButton_4_clicked();
+
 private:
     Ui::MainWindow *ui;
     mainwindow_hotel *hotel;
     mainwindow_finances *finance;
- mainwindow_visa *visa;
+    mainwindow_visa *visa;
+    mainwindow_tba *c;
 };
 #endif // MAINWINDOW_H

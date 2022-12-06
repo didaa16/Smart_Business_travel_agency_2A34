@@ -21,8 +21,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    alerte.cpp \
     arduino_finances.cpp \
     arduino_hotel.cpp \
+    arduino_tba.cpp \
+    client.cpp \
     connection.cpp \
     facture.cpp \
     gestionvisa.cpp \
@@ -32,12 +35,17 @@ SOURCES += \
     mainwindow.cpp \
     mainwindow_finances.cpp \
     mainwindow_hotel.cpp \
+    mainwindow_tba.cpp \
     mainwindow_visa.cpp \
+    smtpp.cpp \
     stats_hotel.cpp
 
 HEADERS += \
+    alerte.h \
     arduino_finances.h \
     arduino_hotel.h \
+    arduino_tba.h \
+    client.h \
     connection.h \
     facture.h \
     gestionvisa.h \
@@ -46,13 +54,16 @@ HEADERS += \
     mainwindow.h \
     mainwindow_finances.h \
     mainwindow_hotel.h \
+    mainwindow_tba.h \
     mainwindow_visa.h \
+    smtpp.h \
     stats_hotel.h
 
 FORMS += \
     mainwindow.ui \
     mainwindow_finances.ui \
     mainwindow_hotel.ui \
+    mainwindow_tba.ui \
     mainwindow_visa.ui \
     stats_hotel.ui
 
