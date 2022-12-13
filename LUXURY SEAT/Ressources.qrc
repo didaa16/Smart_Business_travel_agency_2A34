@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/Backg">
+        <file>Background/Backg.jpg</file>
+        <file>Background/Backg1.jpg</file>
+        <file>Background/Backg2.png</file>
+    </qresource>
+    <qresource prefix="/Boutons">
+        <file>Bottons/Add.png</file>
+        <file>Bottons/Afficher.png</file>
+        <file>Bottons/Annuler.png</file>
+        <file>Bottons/Enregistrer.png</file>
+        <file>Bottons/Home.png</file>
+        <file>Bottons/Hotel.png</file>
+        <file>Bottons/Modifier.png</file>
+        <file>Bottons/Pdf.png</file>
+        <file>Bottons/Rechercher.png</file>
+        <file>Bottons/Recommendation.png</file>
+        <file>Bottons/Retour.png</file>
+        <file>Bottons/Star.png</file>
+        <file>Bottons/Statistiques.png</file>
+        <file>Bottons/Supprimer.png</file>
+        <file>Bottons/Client.png</file>
+        <file>Bottons/Finances.png</file>
+        <file>Bottons/Visa.png</file>
+        <file>Bottons/Voyage.png</file>
+    </qresource>
+    <qresource prefix="/Logos">
+        <file>Logo/Logo.png</file>
+        <file>Logo/Logo1.png</file>
+        <file>Logo/Logo2.png</file>
+        <file>Logo/SmartyXdev.png</file>
+    </qresource>
+</RCC>

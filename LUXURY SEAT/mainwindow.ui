@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1127</width>
+    <height>730</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LUXURY SEAT</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Ressources.qrc">
+    <normaloff>:/Logos/Logo/Logo.png</normaloff>:/Logos/Logo/Logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_backg_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1121</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(125, 249, 255, 255), stop:1 rgba(20, 52, 164, 255));
+color:rgb(243, 252, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>250</y>
+      <width>154</width>
+      <height>212</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Ressources.qrc">:/Logos/Logo/Logo1.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QWidget" name="BOTTONS" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>881</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Franklin Gothic Demi Cond&quot;;
+background-color: rgb(85, 170, 255);
+selection-color: rgb(85, 255, 255);
+selection-background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Gestion Client</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Ressources.qrc">
+         <normaloff>:/Boutons/Bottons/Client.png</normaloff>:/Boutons/Bottons/Client.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Franklin Gothic Demi Cond&quot;;
+background-color: rgb(85, 170, 255);
+selection-color: rgb(85, 255, 255);
+selection-background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Gestion Hotel</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Ressources.qrc">
+         <normaloff>:/Boutons/Bottons/Hotel.png</normaloff>:/Boutons/Bottons/Hotel.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Franklin Gothic Demi Cond&quot;;
+background-color: rgb(85, 170, 255);
+selection-color: rgb(85, 255, 255);
+selection-background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Gestion Financiaire</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Ressources.qrc">
+         <normaloff>:/Boutons/Bottons/Finances.png</normaloff>:/Boutons/Bottons/Finances.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Franklin Gothic Demi Cond&quot;;
+background-color: rgb(85, 170, 255);
+selection-color: rgb(85, 255, 255);
+selection-background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Gestion voyages</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Ressources.qrc">
+         <normaloff>:/Boutons/Bottons/Voyage.png</normaloff>:/Boutons/Bottons/Voyage.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Franklin Gothic Demi Cond&quot;;
+background-color: rgb(85, 170, 255);
+selection-color: rgb(85, 255, 255);
+selection-background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Gestion Visa</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Ressources.qrc">
+         <normaloff>:/Boutons/Bottons/Visa.png</normaloff>:/Boutons/Bottons/Visa.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+    <zorder>pushButton_3</zorder>
+    <zorder>pushButton_5</zorder>
+    <zorder>pushButton_2</zorder>
+    <zorder>pushButton</zorder>
+    <zorder>pushButton_4</zorder>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>100</y>
+      <width>791</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Ressources.qrc">:/Backg/Background/Backg2.png</pixmap>
+    </property>
+   </widget>
+   <zorder>label_backg_3</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>pushButton_3</zorder>
+   <zorder>pushButton_4</zorder>
+   <zorder>pushButton_5</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>BOTTONS</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1127</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuLUXURY_SEAT">
+    <property name="tearOffEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>LUXURY SEAT</string>
+    </property>
+    <property name="separatorsCollapsible">
+     <bool>false</bool>
+    </property>
+    <property name="toolTipsVisible">
+     <bool>false</bool>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionGESTION_CLIENT"/>
+    <addaction name="separator"/>
+    <addaction name="actionGESTION_HOTEL"/>
+    <addaction name="separator"/>
+    <addaction name="actionGESTION_FINANCIERE"/>
+    <addaction name="separator"/>
+    <addaction name="actionGESTION_VOYAGE"/>
+    <addaction name="separator"/>
+    <addaction name="actionGESTION_VISA"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuLUXURY_SEAT"/>
+  </widget>
+  <action name="actionGESTION_CLIENT">
+   <property name="icon">
+    <iconset resource="Ressources.qrc">
+     <normaloff>:/Boutons/Bottons/Client.png</normaloff>:/Boutons/Bottons/Client.png</iconset>
+   </property>
+   <property name="text">
+    <string>GESTION CLIENT</string>
+   </property>
+  </action>
+  <action name="actionGESTION_HOTEL">
+   <property name="icon">
+    <iconset resource="Ressources.qrc">
+     <normaloff>:/Boutons/Bottons/Hotel.png</normaloff>:/Boutons/Bottons/Hotel.png</iconset>
+   </property>
+   <property name="text">
+    <string>GESTION HOTEL</string>
+   </property>
+  </action>
+  <action name="actionGESTION_FINANCIERE">
+   <property name="icon">
+    <iconset resource="Ressources.qrc">
+     <normaloff>:/Boutons/Bottons/Finances.png</normaloff>:/Boutons/Bottons/Finances.png</iconset>
+   </property>
+   <property name="text">
+    <string>GESTION FINANCIERE</string>
+   </property>
+  </action>
+  <action name="actionGESTION_VOYAGE">
+   <property name="icon">
+    <iconset resource="Ressources.qrc">
+     <normaloff>:/Boutons/Bottons/Voyage.png</normaloff>:/Boutons/Bottons/Voyage.png</iconset>
+   </property>
+   <property name="text">
+    <string>GESTION VOYAGE</string>
+   </property>
+  </action>
+  <action name="actionGESTION_VISA">
+   <property name="icon">
+    <iconset resource="Ressources.qrc">
+     <normaloff>:/Boutons/Bottons/Visa.png</normaloff>:/Boutons/Bottons/Visa.png</iconset>
+   </property>
+   <property name="text">
+    <string>GESTION VISA</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Ressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
